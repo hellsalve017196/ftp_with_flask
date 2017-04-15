@@ -99,7 +99,3 @@ def static_file(path): # SENDING STATIC FILE
     return send_file("./datashak/"+path,attachment_filename=path)
 
 
-"""   500 handle   """
-@app.errorhandler(500)
-def Page_not_found():
-    return "Hello There :D",5
